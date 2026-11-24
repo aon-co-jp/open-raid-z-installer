@@ -1,3 +1,5 @@
+> Latest translations / 翻訳の最新版: [0-LATEST-TRANSLATIONS.md](0-LATEST-TRANSLATIONS.md)
+
 # open-raid-z-installer
 
 **日本語**: [`open-raid-z`](https://github.com/aon-co-jp/open-raid-z)用インストーラー(Tauri 2)。**画面をTypeScript/Viteから Rust(Leptos 0.8、WASM)へ書き直した**もので、機能・Tauriコマンド・9言語(英語既定・第二言語との併記・アラビア語/ペルシャ語はRTL)は元のまま。ディスク検出・構成助言・zpoolプレビューの本体は`open-raid-z`リポジトリ内の`open_runo_installer_core`をそのまま使う。
