@@ -159,3 +159,7 @@ Paste the following into Claude Code as is.
 ### 再開メッセージ / Resume message
 「`F:\open-raid-z-installer`と`F:uno`、open-raid-z(新規clone)を再開。MSI/NSIS通し試験は合格。未了=管理者でのディスク一覧・文字サイズ確認、旧TS版`open_runo_installer`削除(済んでいなければ)のpushとrunoのPORTING.md未了1更新。」
 "Resume `F:\open-raid-z-installer`, `F:uno` and a fresh open-raid-z clone. MSI/NSIS tests pass. Open: admin disk list and font-size checks; push the deletion of the old TS `open_runo_installer` if not yet done and update PORTING.md item 1 in runo."
+
+## 2026-11-25 追記: 文字サイズの確認 / Font-size check
+**日本語**: 幅400pxで文字を16px→24px(150%)にすると、これまで横スクロールが出ていました(入力欄・ボタンの最小幅が原因)。`ui/styles.css`を直し、24pxまで出なくなったことをブラウザで確認しました。**未了**: 32px(200%)・幅400pxではまだ約38px超える(`select`の幅が残る原因)。実際のアプリ(Tauri)での再ビルドと目視は未実施。
+**English**: At 400 px wide, raising text from 16 px to 24 px (150%) used to cause a horizontal scrollbar (min widths of inputs and buttons). I fixed `ui/styles.css` and confirmed in a browser that it no longer appears up to 24 px. **Open**: at 32 px (200%) and 400 px it still overflows by about 38 px (a leftover `select` width); a rebuild and visual check in the real Tauri app were not done.

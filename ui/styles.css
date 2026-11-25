@@ -203,3 +203,31 @@ html[dir="rtl"] .container {
     border-color: rgba(255, 255, 255, 0.2);
   }
 }
+
+/* 大きい文字サイズ(150%)でも横スクロールを出さない / no horizontal scroll at 150% text size */
+input,
+select,
+button {
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.row label,
+.container {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.app_header,
+.header_actions,
+.lang_switcher {
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+button {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
